@@ -1,0 +1,14 @@
+// Global stylesheet where we will import all other stylesheets
+//ABSTRACT
+@import "sass/abstracts/abstracts";
+//BASES
+@import "sass/bases/bases";
+// //COMPONENTS
+@import "sass/components/components";
+
+//LAYOUTS
+@import "sass/layouts/layouts";
+
+// //PAGES
+// @import "sass/pages/home",
+//         "sass/pages/contact";

@@ -1,0 +1,53 @@
+//------cursor
+.cursor{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color-1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: all 3.5s ease-out;
+    pointer-events: none;
+    margin: 2px 2px 0 0;
+    z-index: 1000;
+   
+   }
+   
+   .cursor_point{
+       position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $color-1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: all 3.5s ease-out;
+    pointer-events: none;
+    margin: 2px 2px 0 0;
+    z-index: 1000;
+   
+   }
+   
+   .cursor.active{
+       animation: cursorAnimation 0.3s;
+       animation-timing-function: linear;
+       animation-fill-mode: forwards;
+   }
+   @keyframes cursorAnimation {
+       0%{
+           transform: scale(1);
+           box-shadow: 0 0 0 5px #5533ff;
+       }
+       50%{
+           transform: scale(2);
+           box-shadow: 0 0 10px 5px #5533ff;
+       }
+       100%{
+           transform: scale(1);
+           box-shadow: 0 0 0 5px #5533ff;
+       }
+       
+   }

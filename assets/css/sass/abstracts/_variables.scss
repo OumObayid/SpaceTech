@@ -1,0 +1,81 @@
+
+/*
+    |-------------------------------|
+    |------- Variables Colors-------|
+    |-------------------------------|
+    */
+$color-1:white;
+$color-2:#3b388b;
+$color-3:#965be4;
+$color-4:#8d8c8c; 
+$color-5:#1549f4;
+$color-6:#c70c0c;
+$color-7:#15c0f4;
+$color-8:#e0c0e0;
+$color-paragraph:#66517c;
+$color-bg-2:#f3f3f3f3;
+$color-bg-3:#15f4ee;
+$color-bg-gradient-2:linear-gradient(to right top, #ff9000, #ff8700, #ff7d00, #ff7300, #ff6800, #ff5320, #ff3c33, #ff1e43, #ff0066, #ff008c, #f300b4, #d420dc);
+$color-bg-gradient-1: linear-gradient(to right, $color-2,$color-2, $color-3,$color-3);
+$color-bg-gradient-3: linear-gradient(to left bottom,transparent, $color-3 , $color-2);
+$box-shadow-1: 0 0 65px $color-paragraph inset,
+0 0 20px $color-bg-2 inset,
+0 0 5px $color-3;
+$box-shadow-2:1px 5px 10px 5px rgba(62, 30, 78, 0.308);
+
+//     |-------------------------------|
+//     |----variables images sources---|
+//     |-------------------------------|
+   
+
+
+//    |-------------------------------|
+//    |----variables Break-points ----|
+//    |-------------------------------|
+    
+
+    $large-phone:768px;
+    $tablet:992px;
+    $desktop:1200px;
+
+
+//     |-------------------------------|
+//     |-----variables Font size ------|
+//     |-------------------------------|
+   
+
+$extralarge: 40px;
+$large: 29px;
+$extramedium:24px;
+$medium: 20px;
+$lessmedium: 18px;
+$extrasmall:16px;
+$small:15px;
+
+// /*
+//     |-------------------------------|
+//     |-----variables Font weight-----|
+//     |-------------------------------|
+//     */
+
+$bigweight: 700;
+$extramediumweight:600;
+$mediumweight:500;
+$smallweight:400;
+
+/*
+    |-------------------------------|
+    |-----variables line height-----|
+    |-------------------------------|
+*/
+
+$height1:50px;
+$height2:40px;
+$height3:38px;
+$height4:35px;
+$height5:33px;
+$height6:30px;
+$height7:22px;
+$height8:1;
+$height9:0;
+

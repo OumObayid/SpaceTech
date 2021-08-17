@@ -1,0 +1,137 @@
+@include for-largephone {
+   
+}
+.content-header {
+    
+    .content{
+        .button-header{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+@include for-tablet {
+  
+    .content-header {
+    
+        .content{
+            .button-header{
+                display: block;
+            }
+        }
+    }
+       
+}
+
+
+@include for-desktop {
+    //header------
+    .logo{
+        left: 0;
+    }
+    
+    .content-header{
+        top: 13rem;
+        .content h2{
+            line-height: $height1;
+            letter-spacing: 3.5px;
+            font-size: $large;                   
+        }
+    
+        p{
+            margin: 1rem 0 3rem 0;
+            line-height:$height5;
+           
+        }
+        
+    }
+      
+    .button-header a{
+         padding: 10px 15px;
+        font-size: 15px;
+         letter-spacing: 5px;
+    }
+
+    .img-header{     
+         
+        img{
+           
+            margin-left: 1rem;
+            display: block;
+            height: auto;
+            max-width: 70%;
+        }
+    }
+    
+    //all h2 except h2 of section header and about------
+    
+    h2:not(.section-about h2 , .header-section .content h2) {
+        font-size: $extralarge;
+    }
+    //About----------------
+    .content-about {
+       
+        h2{
+            font-size: $large;
+            line-height: $height2;
+
+        }
+        p {
+            font-size: $extrasmall;
+            margin:1rem 3rem 0 0 ;  
+           
+        }
+    }
+   
+   //pricing-------------------
+   #pricing .pricing-table h3 {
+    font-size: $extralarge !important;
+   
+   } 
+   #pricing .pricing-table h3  span {
+    font-size: $medium;
+   
+    left: 15% !important;
+   }
+
+
+    //blog -------
+    .blog-container{
+        width: 80%;
+    }
+    .date h3{
+        font-size: $extramedium;
+    }
+
+    .cardblog {
+        display: flex;
+        justify-content: space-between;
+       
+        img {
+            width: 100%;
+        }
+        .content-blog {
+            width: 68%;
+        }
+        div:first-of-type{
+            width: 35%;
+            margin-right: 1rem;
+        }
+    }
+    .content-blog h3{
+        font-size:$extramedium ;
+        margin-top: -.5rem;
+    }
+   
+   .content-blog h3:last-of-type{
+       font-size: $lessmedium;
+   }
+
+   //contact
+    
+   h3{
+    line-height: $height2;
+    font-size: $medium;
+   }
+   
+}

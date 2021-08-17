@@ -1,0 +1,42 @@
+.services-section{
+    margin-top: 4.3rem;
+    overflow: hidden;
+    
+}
+.grey-container{
+     background-color: $color-bg-2;
+    border-radius: 50% 50% 0 0;
+    padding: 4rem 3rem 0 3rem;
+}
+.card{
+    margin-bottom: 1rem;
+    z-index: 1;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    text-align: justify;
+    i{  display: flex; 
+        justify-content: center;
+       color: $color-2;
+       font-size:$extralarge;
+   }
+    h4{
+        color: $color-4;
+    }
+   
+}
+.card:hover{
+    transition:  0.5s ;
+    color: $color-1;
+    background-image: linear-gradient(to left bottom, #9b6ed5, #7b5cbc, #5b4aa4, #3b388b, #162873);    
+    box-shadow:$box-shadow-2;
+    border-radius: 20px;
+   i,p,h4{
+       color: $color-1;
+    } 
+   
+}
+
+
+
+
+

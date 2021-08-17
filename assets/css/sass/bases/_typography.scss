@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+//color--------------------
+
+p{
+    color:$color-paragraph;
+}
+h2 span{
+    color : $color-2;
+}
+h2{
+  color: $color-4;
+}
+
+.content-about h2, #contact h3
+{
+    background: $color-bg-gradient-1;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+//font---------------------
+//font-family
+.content-about p{
+   font-family: 'Poppins', sans-serif;
+}
+
+//font-size-------------------
+
+h2:not(.section-about h2 , .header-section .content h2) {
+    font-size: $large;
+}
+
+//font weight-------------
+

@@ -1,0 +1,40 @@
+@import"./typography",
+"./reset";
+
+//bases styles
+//pour scroller lentement dans la page
+html {
+    scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+//scrollbar
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,$color-2);
+    border-radius: 7px;
+}
+
+
+
+body {
+    width: 100%;
+    background-color: $color-1;
+    font-family: poppins;
+    line-height: $height6;
+    font-size: $small;
+    overflow-x: hidden;
+}
+
+
+
+.flexbox{
+display: flex;
+    justify-content: space-between;
+}

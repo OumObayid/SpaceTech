@@ -1,0 +1,81 @@
+    .pricing-section{
+        margin-top: 4.3rem;
+       
+      
+    }
+   
+    #pricing .pricing-table {
+    border: 1px solid $color-3;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    border-radius: 20px;
+   
+    }
+    #pricing .pricing-table{
+          margin-bottom: 2rem !important;
+    }
+    
+    
+    .col-md-4:nth-of-type(2) .pricing-table{
+          transform: scale(1.1);
+        }
+    #pricing .pricing-table .pricing-head{
+        background-image: $color-bg-gradient-3;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        padding:25px 40px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+   
+    #pricing .pricing-table h4 {
+      font-size: $lessmedium;
+      color:$color-8;
+      font-weight: $mediumweight;
+      text-transform: uppercase;
+      margin-bottom: 11px; }
+
+    #pricing .pricing-table h3 {
+      color: $color-1;
+      font-size: $large;
+      font-weight: $mediumweight;
+      position: relative;
+     }
+
+    #pricing .pricing-table h3  span {
+      font-size: $lessmedium;
+      position: absolute;
+      left: 10%;
+      top: 10px; }
+
+    #pricing .pricing-table ul {
+      padding-top: 0.5rem; }
+
+    #pricing .pricing-details ul li {
+      
+      font-size: $small;
+      font-weight: $smallweight;
+      color: $color-3;
+      display: block;
+      line-height: $height5;
+       transition: .5s;
+    
+    }
+    
+    #pricing .pricing-details ul li:hover {
+        border-left: 15px solid $color-3;
+        border-right: 15px solid $color-3;
+      }
+
+    #pricing .pricing-table:hover {
+      border: 1px solid $color-3;
+      box-shadow: $box-shadow-2;
+      -moz-transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+  
+      #pricing button {
+        box-shadow:$box-shadow-1;
+    }

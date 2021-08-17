@@ -1,0 +1,232 @@
+.header-section {
+    margin-bottom: 4rem;
+    background-image: url('../img/bg-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    font: {
+        size: $extramedium;
+        family: 'Poppins', sans-serif;
+           }
+            
+    color: $color-1;  
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    margin: .5rem 0; 
+    background: linear-gradient(to right,
+    #ffff 0,
+    #607dff 10%,
+    #c089ff 20%,
+    #ffff 60%);
+    background-position:0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+    animation: swipe 16s infinite linear;
+    animation-fill-mode: forwards;
+}
+.logo img {
+    width: 4rem;
+    height: 3rem;
+}
+
+//animated logo title
+@keyframes swipe {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 350px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+//menu
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    
+    li {
+        a {
+            position: relative;
+            display: block;
+            color: $color-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            font-weight: $bigweight;
+          }
+    }
+}
+
+.invisible {
+    top: -50px;
+    -webkit-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+.scrolled {
+    background-image: $color-bg-gradient-1;
+    box-shadow: 0px 7px 15px -7px #000000;
+    -webkit-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+
+
+//style de menu navbar
+.navbar.styleNav {
+    border-radius: 0 0 80% / 100% 0;
+    opacity: .9;
+    background-image:$color-bg-gradient-1;
+   
+}
+
+.navbar-toggler{
+    margin-top: 1rem;
+}
+
+.menu i{
+    color: $color-bg-2;
+
+}
+.radius {
+    border-radius: 0 0 75% / 90% 0;
+    background-image: $color-bg-gradient-1;
+    transition: all 1s;
+}
+
+
+.navbar-expand-md .navbar-nav .nav-link {
+    color: $color-bg-2;
+    font-size:$extrasmall;
+    padding: 8px 0px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-weight: $mediumweight;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:focus,
+.navbar-expand-md .navbar-nav .nav-link:hover,.active {
+    color: $color-1 !important;
+    transition: .3s ease-in-out;
+    text-shadow: 0 0 5px $color-1, 0 0 5px $color-1;
+}
+
+.navbar-expand-md .navbar-toggler {
+    background: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+
+.navbar-expand-md .navbar-toggler:focus {
+    outline: none;
+}
+
+//header content-----------------
+.content-header {
+    position: relative;
+    top: 7rem;
+    z-index: 99;
+    .content{
+        h2 {
+        line-height: $height2;
+        color: $color-1;
+        font-size: $large;
+        font-family: 'Poppins', sans-serif;
+        }
+       
+        p {
+            font: {
+            size: $lessmedium;
+            family: 'Oxygen', sans-serif;
+            }
+            margin: 1rem 0 2rem 0;
+            color: rgb(190, 190, 190);
+            line-height: $height7;
+        }
+    }
+}
+
+.img-header {
+    img {
+        // width: 450px;
+        // height: 400px;
+        margin-top: 2rem;
+        display: block;
+        height: auto;
+        max-width: 50%;
+        float: right;
+        margin-right: 5.5rem;
+    }
+}
+
+//button for header
+.button-header a {
+    position: relative;
+    padding: 2px 9px;
+    font-size: 14px;
+    color: $color-bg-3;
+    font-family: poppins;
+    font-weight: $smallweight;
+    border: 3px solid $color-bg-3;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.2s;
+    margin-right: 1rem;
+    
+}
+
+.button-header a:nth-of-type(2) {
+    filter: hue-rotate(200deg);
+}
+
+.button-header a:hover {
+    text-decoration: none;
+    box-shadow: 0 5px 50px 0 $color-bg-3 inset, 0 5px 50px 0 $color-bg-3;
+    text-shadow: 0 0 5px $color-bg-3, 0 0 5px $color-bg-3;
+} 
+
+//------SVG-----------
+.shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: $height9;
+    transform: rotate(180deg);
+}
+
+.shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 214px;
+}
+
+.shape-divider-bottom .shape-fill {
+    fill: $color-1;
+}
+
