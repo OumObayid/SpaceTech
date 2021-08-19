@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     |-------------------------------|
     |------- Variables Colors-------|
@@ -592,164 +593,255 @@ button {
   border-color: #965be4;
 }
 
-/*wrap pictures----*/
-.showcase-section .showcase-wrap {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+/* ===================showcase section ==================*/
+.filter {
   position: relative;
   overflow: hidden;
-  z-index: 1;
-  margin-bottom: 1rem;
 }
 
-.showcase-section .showcase-wrap::before {
-  content: "";
-  background: #f3f3f3f3;
+.filter .cap {
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.showcase-section .showcase-wrap img {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.showcase-section .showcase-wrap .showcase-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
+  width: 100%;
+  height: 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b388b), color-stop(#3b388b), color-stop(#965be4), to(#965be4));
+  background-image: linear-gradient(to right, #3b388b, #3b388b, #965be4, #965be4);
+  opacity: 0.8;
+  left: 15px;
+  bottom: -100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  vertical-align: middle;
+  padding-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.showcase-section .showcase-wrap .showcase-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #8d8c8c;
-  border-left: 3px solid #8d8c8c;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.showcase-section .showcase-wrap .showcase-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #8d8c8c;
-  border-right: 3px solid #8d8c8c;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.showcase-section .showcase-wrap .showcase-info h4 {
-  font-size: 20px;
-  color: #3b388b;
-  font-weight: 700;
-}
-
-.showcase-section .showcase-wrap .showcase-info p {
-  color: #3b388b;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.showcase-section .showcase-wrap .showcase-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.showcase-section .showcase-wrap .showcase-links a {
+.filter .cap a {
   color: white;
-  background: #965be4;
-  margin: 10px 2px;
-  width: 36px;
-  height: 36px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-decoration: none;
+  font-size: 20px;
 }
 
-.showcase-section .showcase-wrap .showcase-links a i {
-  font-size: 18px;
-  line-height: 1;
+.filter:hover .cap {
+  bottom: 0px;
 }
 
-.showcase-section .showcase-wrap:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.filter:hover .cap a p {
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 
-.showcase-section .showcase-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
+.filter:hover .cap a p:hover {
+  color: #3b388b;
 }
 
-.showcase-section .showcase-wrap:hover .showcase-info {
-  opacity: 1;
+/* box */
+.showcase-box {
+  overflow: hidden;
 }
 
-.showcase-section .showcase-wrap:hover .showcase-info::before {
-  top: 1rem;
-  left: 1rem;
+.imgzoom {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
-.showcase-section .showcase-wrap:hover .showcase-info::after {
-  bottom: 1rem;
-  right: 1rem;
+.imgzoom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
+/*
+<section id="showcase" class="showcase-section">
+<div>
+    
+    <!-- Start Row -->
+    <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class=" text-center">
+            <h2 class="text-center ">Nos <span>Réalisation</span></h2>
+            <hr class="mx-auto mb-4 w-25">
+        </div>
+    </div>
+    <!-- End Row -->
+
+    <!-- Start Row -->
+    <div data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <ul>
+                <li data-filter="all" class="filter-item filter-active">All</li>
+                <li data-filter="filter-app" class="filter-item">App</li>
+                <li data-filter="filter-design" class="filter-item">design</li>
+                <li data-filter="filter-web" class="filter-item">Web</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Row -->
+
+    <!-- Start Row -->
+
+    <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+
+        <div class=" container ">
+            <div class="row " data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 filter filter-app">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery1.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 1</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery1.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 1"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-design">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery2.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 2</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery1.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 2"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-app">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery3.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 3</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery3.jpg" data-lightbox="mygallery"
+                                    class=" showcase-lightbox" data-title="project 3">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                                <a href="#" title="More Details">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-web">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery4.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 4</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery4.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 4"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-design">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery5.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 5</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery5.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 5"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-web">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery6.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 6</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery1.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 6"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-web">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery7.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 7</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery7.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 7"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-web">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery8.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 8</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery8.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 8"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filter filter-web">
+                    <div class="showcase-wrap">
+                        <img src="./assets/img/gallery9.jpg" class="img-fluid" alt="">
+                        <div class="showcase-info">
+                            <h4>Project 9</h4>
+                            <p>Project</p>
+                            <div class="showcase-links">
+                                <a href="./assets/img/gallery9.jpg" data-lightbox="mygallery"
+                                    class="showcase-lightbox" data-title="project 9"><i
+                                        class="fas fa-search-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End Row -->
+</div>
+</section>
+
+*/
 .blog-container {
   width: 100%;
   margin: auto;
