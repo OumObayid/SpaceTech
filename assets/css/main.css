@@ -8,9 +8,11 @@
     |-----variables line height-----|
     |-------------------------------|
 */
-@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@700&display=swap");
 p {
   color: #66517c;
 }
@@ -29,10 +31,6 @@ h2 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.content-about p {
-  font-family: 'Poppins', sans-serif;
 }
 
 h2:not(.section-about h2, .header-section .content h2) {
@@ -89,7 +87,7 @@ html {
 body {
   width: 100%;
   background-color: white;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   line-height: 30px;
   font-size: 15px;
   overflow-x: hidden;
@@ -240,7 +238,7 @@ button {
 
 .logo {
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Enriqueta", serif;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +356,6 @@ button {
   font-size: 16px;
   padding: 8px 0px;
   margin-left: 20px;
-  font-family: 'Poppins', sans-serif;
   position: relative;
   font-weight: 500;
 }
@@ -383,10 +380,6 @@ button {
   float: right;
 }
 
-/*.navbar-expand-md .navbar-toggler:focus {
-    outline: none;
-}
-*/
 .content-header {
   position: relative;
   top: 7rem;
@@ -397,7 +390,6 @@ button {
   line-height: 40px;
   color: white;
   font-size: 29px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .content-header .content p {
@@ -422,7 +414,6 @@ button {
   padding: 2px 9px;
   font-size: 14px;
   color: #15f4ee;
-  font-family: poppins;
   font-weight: 400;
   border: 3px solid #15f4ee;
   letter-spacing: 3px;

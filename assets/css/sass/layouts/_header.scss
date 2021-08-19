@@ -11,7 +11,7 @@
 .logo {
     font: {
         size: $extramedium;
-        family: $rubik ;
+        family: $Enriqueta ;
            }
             
     color: $color-1;  
@@ -92,7 +92,7 @@
 
 
 
-//style de menu navbar
+// navbar menu style
 .navbar.styleNav {
     border-radius: 0 0 80% / 100% 0;
     opacity: .9;
@@ -120,12 +120,10 @@
     font-size:$extrasmall;
     padding: 8px 0px;
     margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
     position: relative;
     font-weight: $mediumweight;
 }
 
-//.navbar-expand-md .navbar-nav .nav-link:focus,
 .navbar-expand-md .navbar-nav .nav-link:hover {
     color: $color-1 !important;
     transition: .3s ease-in-out;
@@ -143,10 +141,6 @@
 }
 
 
-/*.navbar-expand-md .navbar-toggler:focus {
-    outline: none;
-}
-*/
 //header content-----------------
 .content-header {
     position: relative;
@@ -157,7 +151,6 @@
         line-height: $height2;
         color: $color-1;
         font-size: $large;
-        font-family: 'Poppins', sans-serif;
         }
        
         p {
@@ -174,8 +167,6 @@
 
 .img-header {
     img {
-        // width: 450px;
-        // height: 400px;
         margin-top: 2rem;
         display: block;
         height: auto;
@@ -191,7 +182,6 @@
     padding: 2px 9px;
     font-size: 14px;
     color: $color-bg-3;
-    font-family: poppins;
     font-weight: $smallweight;
     border: 3px solid $color-bg-3;
     letter-spacing: 3px;

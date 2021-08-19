@@ -1,8 +1,12 @@
 @import"./typography",
 "./reset";
 
-//bases styles
-//pour scroller lentement dans la page
+
+//     |-------------------------------|
+//     |---------basic styles----------|
+//     |-------------------------------| 
+
+// to scroll slowly in the page 
 html {
     scroll-behavior: smooth;
 }
@@ -26,7 +30,7 @@ html {
 body {
     width: 100%;
     background-color: $color-1;
-    font-family: poppins;
+    font-family: $Poppins;
     line-height: $height6;
     font-size: $small;
     overflow-x: hidden;
