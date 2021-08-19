@@ -1,6 +1,3 @@
-
-
-
     
 $(function()  {
 
@@ -28,7 +25,7 @@ $(window).on('load', function() {
             return;
         }
         $('html, body').animate({
-            scrollTop: $(the_id).offset().top - 150
+            scrollTop: $(the_id).offset().top - 90
         }, 'slow');
         return false;
     });
@@ -220,64 +217,132 @@ $(window).on('load', function() {
     // //Default active on home
    
        
+    if ($(window).width() > 992) {
 
-       
+        $('#home').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link1").addClass("active");
+        }, { offset: 20 });
+        $('#home').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link1").addClass("active");
+        }, { offset: -20 });
 
         $('#about').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link2").addClass("active");
+        }, { offset: -20 });
+        $('#about').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link2").addClass("active");
+        }, { offset: 100 });
+
+        $('#services').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link3").addClass("active");
+        }, { offset: 110 });
+        $('#services').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link3").addClass("active");
+        }, { offset: -110 });
+
+        $('#showcase').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link4").addClass("active");
+        }, { offset: 100 });
+        $('#showcase').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link4").addClass("active");
+        }, { offset: 120 });
+
+        $('#pricing').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link5").addClass("active");
+        }, { offset: 90 });
+        $('#pricing').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link5").addClass("active");
+        }, { offset: -20 });
+
+        $('#blog').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link6").addClass("active");
+        }, { offset: 90 });
+        $('#blog').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link6").addClass("active");
+        }, { offset: -20 });
+
+        $('#contact').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link7").addClass("active");
+        }, { offset: 90 });
+    }
+       
+/*
+        $('#about').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
             $(".link1").addClass("active");
-            $(".navbar-nav .nav-link").removeClass(':focus');
+            //$(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset:0 });
         $('#about').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link1").addClass("active");
-            $(".navbar-nav .nav-link").removeClass(':focus');
-        }, { offset: -2 });
+           // $(".navbar-nav .nav-link").removeClass(':focus');
+        }, { offset: 60 });
 
         $('#services').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link2").addClass("active");
-            $(".navbar-nav .nav-link").removeClass(':focus');
+          //  $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 68 });
         $('#services').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link2").addClass("active");
+         //   $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 70 });
 
         $('#showcase').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link3").addClass("active");
+            $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: -20 });
         $('#showcase').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link3").addClass("active");
+           // $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 90 });
 
         $('#pricing').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link4").addClass("active");
+           // $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 90 });
         $('#pricing').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link4").addClass("active");
+          //  $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: -20 });
 
         $('#blog').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link5").addClass("active");
+           // $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 90 });
         $('#blog').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
             $(".link5").addClass("active");
+           //  $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: -20 });
 
         $('#contact').waypoint(function() {
             $(".navbar-collapse ul li").children().removeClass("active");
-            $(".link6").addClass("active");
+            $(".link6").addClass("active"); 
+          //  $(".navbar-nav .nav-link").removeClass(':focus');
         }, { offset: 90 });
     
 
-
+      */
 
 
     //------------------------------------------------------//

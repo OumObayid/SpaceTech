@@ -9,10 +9,8 @@
     |-------------------------------|
 */
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
 p {
   color: #66517c;
 }
@@ -242,7 +240,7 @@ button {
 
 .logo {
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,8 +363,14 @@ button {
   font-weight: 500;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:focus,
-.navbar-expand-md .navbar-nav .nav-link:hover, .active {
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  color: white !important;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  text-shadow: 0 0 5px white, 0 0 5px white;
+}
+
+.active {
   color: white !important;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -379,10 +383,10 @@ button {
   float: right;
 }
 
-.navbar-expand-md .navbar-toggler:focus {
-  outline: none;
+/*.navbar-expand-md .navbar-toggler:focus {
+    outline: none;
 }
-
+*/
 .content-header {
   position: relative;
   top: 7rem;
@@ -755,10 +759,6 @@ button {
   right: 1rem;
 }
 
-.blog-entries {
-  padding-top: 4rem;
-}
-
 .blog-container {
   width: 100%;
   margin: auto;
@@ -948,7 +948,7 @@ button {
 }
 
 .pricing-section {
-  margin-top: 4.3rem;
+  margin: 4.3rem 0;
 }
 
 #pricing .pricing-table {

@@ -11,7 +11,7 @@
 .logo {
     font: {
         size: $extramedium;
-        family: 'Poppins', sans-serif;
+        family: $rubik ;
            }
             
     color: $color-1;  
@@ -125,13 +125,17 @@
     font-weight: $mediumweight;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:focus,
-.navbar-expand-md .navbar-nav .nav-link:hover,.active {
+//.navbar-expand-md .navbar-nav .nav-link:focus,
+.navbar-expand-md .navbar-nav .nav-link:hover {
     color: $color-1 !important;
     transition: .3s ease-in-out;
     text-shadow: 0 0 5px $color-1, 0 0 5px $color-1;
 }
-
+.active {
+    color: $color-1 !important;
+    transition: .3s ease-in-out;
+    text-shadow: 0 0 5px $color-1, 0 0 5px $color-1;
+}
 .navbar-expand-md .navbar-toggler {
     background: transparent;
     cursor: pointer;
@@ -139,10 +143,10 @@
 }
 
 
-.navbar-expand-md .navbar-toggler:focus {
+/*.navbar-expand-md .navbar-toggler:focus {
     outline: none;
 }
-
+*/
 //header content-----------------
 .content-header {
     position: relative;
