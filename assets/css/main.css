@@ -430,9 +430,9 @@ button {
 
 .button-header a:hover {
   text-decoration: none;
-  -webkit-box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-          box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+  -webkit-box-shadow: 0 1px 50px 0 #15f4ee inset, 0 1px 50px 0 #15f4ee;
+          box-shadow: 0 1px 50px 0 #15f4ee inset, 0 1px 50px 0 #15f4ee;
+  text-shadow: 0 0 2px #15f4ee, 0 0 2px #15f4ee;
 }
 
 .shape-divider-bottom {
