@@ -1,5 +1,6 @@
 .showcase-section {
     margin: 4.3rem 0;
+    padding: 1rem;
 }
 
 /*menu*/
@@ -7,8 +8,8 @@
 .showcase-section li {
     cursor: pointer;
     display: inline-block;
-    padding: 8px 18px 10px 18px;
-    font-size: 15px;
+    padding: 8px 10px ;
+    font-size: $small;
     font-weight: $extramediumweight;
     line-height: $height8;
     color: $color-4;
@@ -70,7 +71,9 @@
 }
 
 .imgzoom {
+
     transition: all 0.8s ease-in-out;
+
     &:hover {
         transform: scale(1.2);
     }

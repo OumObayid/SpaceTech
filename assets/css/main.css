@@ -465,7 +465,6 @@ button {
 .grey-container {
   background-color: #f3f3f3f3;
   border-radius: 50% 50% 0 0;
-  padding: 4rem 3rem 0 3rem;
 }
 
 .card {
@@ -568,13 +567,14 @@ button {
 
 .showcase-section {
   margin: 4.3rem 0;
+  padding: 1rem;
 }
 
 /*menu*/
 .showcase-section li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 18px 10px 18px;
+  padding: 8px 10px;
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
@@ -793,6 +793,12 @@ button {
   .content-about p {
     font-size: 16px;
     margin: 1rem 3rem 0 0;
+  }
+  .grey-container {
+    padding: 4rem 2.5rem 0 2.5rem;
+  }
+  .showcase-section li {
+    font-size: 18px;
   }
   #pricing .pricing-table h3 {
     font-size: 40px !important;

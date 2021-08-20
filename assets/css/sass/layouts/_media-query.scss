@@ -10,6 +10,7 @@
         }
     }
 }
+
 @include for-tablet {
   
     .content-header {
@@ -82,8 +83,18 @@
            
         }
     }
-   
+    //Service-------------------
+    .grey-container{
+      
+      padding: 4rem 2.5rem 0 2.5rem;
+   }
+   //Showcase-------------------
+   .showcase-section li {
+    font-size: $lessmedium;
+   }
+
    //pricing-------------------
+
    #pricing .pricing-table h3 {
     font-size: $extralarge !important;
    
