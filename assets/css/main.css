@@ -846,6 +846,7 @@ button {
 
 .pricing-section {
   margin: 4.3rem 0;
+  overflow: hidden;
 }
 
 #pricing .pricing-table {
