@@ -42,5 +42,12 @@ git clone https://github.com/OumObayid/spaceteck.git
 cd spaceteck
 # Ouvrir index.html dans votre navigateur
 ```
+
+---
+
+## 👨‍💻 Auteur :
+    - **Oumaima El Obayid** 
+    - Email : elobayidoumaima@gmail.com --- 
+
 ---
 
