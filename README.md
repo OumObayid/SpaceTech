@@ -21,16 +21,6 @@ Développé avec **HTML5, CSS3, JavaScript, jQuery et Bootstrap**, il propose un
 
 ---
 
-## 🛠️ Technologies utilisées
-
-- **HTML5**
-- **CSS3**
-- **Bootstrap**
-- **JavaScript (ES6)**
-- **jQuery**
-
----
-
 ## 📸 Aperçu
 
 <img width="320" height="180" alt="spaceteck" src="https://github.com/user-attachments/assets/feb65b2e-754a-4038-8e61-706ff09956ac" />
